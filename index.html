@@ -1,16 +1,30 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Julien Drevon</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Style personnalisé pour l'icône circulaire */
+			#header .logo {
+				width: 15vw; /* Ajustez selon vos préférences */
+				height: 15vw;
+				border-radius: 50%;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #fff; /* Couleur de fond si nécessaire */
+			}
+
+			#header .logo img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* L'image couvre tout l'espace circulaire */
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,22 +34,24 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="image"><img src="images/your_photo_2.png" alt="Julien Drevon" /></span>
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1>Julien Drevon</h1>
+								<p>Welcome to my personal webpage. Feel free to explore and learn more about me, my research topics, and my integration into the astrophysics community.</p>
 							</div>
 						</div>
+
+						<!-- Navigation Menu -->
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
 								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#publications">Publications</a></li>
+								<li><a href="#talks">Talks</a></li>
+								<li><a href="#education">Education</a></li>
+								<li><a href="#outreach">Outreach</a></li>
+								<li><a href="#press-media">Press</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -43,307 +59,291 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-							</article>
+        <!-- About Me -->
+          <article id="about">
+            <h2 class="major">About Me</h2>
+            <div style="text-align: center;">
+              <img src="images/your-photo.jpg" alt="" style="width: 50%; display: block; margin: 0 auto; margin-bottom: 20px;" />
+            </div>
+            <p> Hello everyone and welcome to my personal webpage. I am Julien Drevon, and working for the European Southern Observatory (ESO)
+                with a Fellow astronomer position since November 1st 2023.</p>
+            <p> Born the 2nd of November 1997 in Cannes (France), I have made my bachelor degrees and my master degree at the Universite Cote d'Azur at Nice (France).
+                In October 2023, I obtained my PhD thesis under the supervision of Pierre CRUZALEBES and Florentin MILLOUR with the title: 
+                <a href="https://theses.fr/2023COAZ4068" target="_blank">"Exploitation of the VLTI/MATISSE instrument: imagery of evolved stars."</a> 
+                In addition to all the stellar evolution theory skills that I have learned during my PhD, I also dealed with
+                interferometric data using the VLTI/MATISSE instrument to understand how to use them in order to locate the molecular and dust formation regions
+                in the vicinity of evolved stars. 
+            </p>          
+            <p> During my 2nd year of my PhD, I have been granted a studentship position at ESO Chile under the supervision of Claudia Paladini to 
+            develop new skills on stellar wind and dust formation around AGB stars.
+            </p>
+            <p> After my PhD I moved to ESO-Chile for a reasearch fellowship position with duties as night astronomer (80 nights per year) at the Paranal Observatory for VLTI. In
+            addition to my night astronomer position, I am also instrument fellow for the VLTI/MATISSE instrument and working on instrumental projects for the observatory. Recently I
+            coded a new quality check script for the VLTI/MATISSE instrument to improve the robusteness of the grading procedure.
+            </p>
+            <p>All of my skills can be divided into four different categories: i) current theoretical knowledge on stellar evolution and dust formation around evolved stars, ii)                     knowledge of infrared interferometric instruments, iii) calibration, processing, and analysis of interferometric data, and iv) programming and the creation of new codes               for processing and analyzing interferometric data.
+               My skills are currently being used to analyze data from the VLTI instruments and reconstruct images of structures located at the surface and in the close environments                 (a few stellar radii) within the molecular and dust envelopes of evolved stars.
+               My goal is to identify the conditions and regions of dust and molecule formation to better constrain the mass-loss phenomenon and improve our understanding of the dust                formation process. </p>
+            <p> <b>Scientific keywords:</b> evolved stars, AGB, red supergiants, dust formation, stellar wind, molecules, convection cells, photosphere, circumstellar envelope.</p>
+            <p> <b>Technical keywords:</b> infrared, interferometry, VLTI, image reconstruction, machine learning, big data, coding, Python, statistics, photometry, spectroscopy.</p>
+            
+            </article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
+						<!-- Publications -->
+						<article id="publications">
+							<h2 class="major">Publications</h2>
+              <p>Please find below all my first author publications and the one in which I have been evolved in</p>
+							<h2 class="major">First author publications</h2>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2024</div>
+  <div>
+    <p>
+<b>Drevon, J.</b> ; Millour, F. ; Cruzalebes, P. ; Paladini, C. ; Scicluna, P. ; Matter, A. ; Chiavassa, A.; Montarges, M. ; Cannon, E. ; Allouche, F. ; Hofmann, K. -H. ; Lagarde, S. ; Lopez, B. ; Meilland, A. ; Petrov, R. ; Robbe-Dubois, S. ; Schertl, D. ; Zins, G. ; Abraham, P. ; Berio, P. ; Henning, Th ; Hron, J. ; Isbell, J. W. ; Jaffe, W. ; Labadie, L. ; Varga, J. ; Weigelt, G. ; Woillez, J. ; van Boekel, R. ; Pantin, E. ; Danchi, W. C. ; de Koter, A. ; Gamez-Rosas, V. ; Hogerheijde, M. R. ; Leftley, J. ; Stee, P. ; Waters, R. -- <i>"Images of Betelgeuse with VLTI/MATISSE across the Great Dimming"</i> (A&A)
+    </p>
+  </div>
+</div>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022</div>
+  <div>
+    <p>
+<b>Drevon, J.</b> ; Millour, F. ; Cruzalebes, P. ; Paladini, C. ; Scicluna, P. -- <i>"RHAPSODY: Reconstructing Hankel rAdial Profiles in centro-Symmetric Objects with Discrete rings for astrophYsics"</i> (SPIE)
+    </p>
+  </div>
+</div>                                       
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022</div>
+  <div>
+    <p>
+      <b>Drevon, J.</b> ; Millour, F. ; Cruzalebes, P. ; Paladini, C. ; Hron, J. ; Meilland, A. ; Allouche, F. ; Hofmann, K. -H. ; Lagarde, S. ; Lopez, B. ; Matter, A. ; Petrov, R.; Robbe-Dubois, S. ; Schertl, D. ; Scicluna, P. ; Wittkowski, M. ; Zins, G. ; Abraham, P. ; Antonelli, P. ; Beckmann, U. ; Berio, P. ; Bettonvil, F. ; Glindemann, A. ; Graser, U. ; Heininger, M. ; Henning, Th. ; Isbell, J. W. ; Jaffe, W. ; Labadie, L. ; Leinert, C. ; Lehmitz, M. ; Morel, S. ; Meisenheimer, K. ; Soulain, A. ; Varga, J. ; Weigelt, G. ; Woillez, J. ; Augereau, J. -C. ; van Boekel, R. ; Burtscher, L. ; Danchi, W. C. ; Dominik, C. ; Gamez Rosas, V. ; Hocde, V. ; Hogerheijde, M. R. ; Klarmann, L. ; Kokoulina, E. ; Leftley, J. ; Stee, P. ; Vakili, F. ; Waters, R. ; Wolf, S. ; Yoffe, G. -- <i>"Locating dust and molecules in the inner circumstellar environment of R Sculptoris with MATISSE" </i> (A&A)
+    </p>
+  </div>
+</div>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+						<h2 class="major">Co-author publications</h2>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2024</div>
+  <div>
+    <p>
+ Planquart, L.; Paladini, C.; Jorissen, A.; Escorza, A. ; Pantin, E. ; <b>Drevon, J.</b> ; Aringer, B. ; Baron, F. ; Chiavassa, A.; Cruzalebes, P. ; Danchi, W.; De Beck, E. ; Groenewegen, M. A. T. ; Hofner, S. ; Hron, J. ; Khouri, T. ; Lopez, B. ; Lykou, F.; Montarges, M.; Nardetto, N. ; Ohnaka, K. ; Olofsson, H.; Rau, G. ; Rosales-Guzman, A.; Sanchez-Bermudez, J.; Scicluna, P. ; Siess, L.; Thevenin, F. ; Van Eck, S.; Vlemmings, W. H. T. ; Weigelt, G. ; Wittkowski, M.-- <i>"An impressionist view of V Hydrae. When MATISSE paints asymmetric giant blobs" </i> (A&A)
+    </p>
+  </div>
+</div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2023</div>
+  <div>
+    <p>
+ Cannon, E. ; Montarges, M. ; de Koter, A. ; Matter, A. ; Sanchez-Bermudez, J. ; Norris, R. ; Paladini, C. ; Decin, L. ; Sana, H. ; Sundqvist, J. O. ; Lagadec, E. ; Kervella, P. ; Chiavassa, A. ; Dupree, A. K. ; Perrin, G. ; Scicluna, P. ; Stee, P. ; Kraus, S. ; Danchi, W. ; Lopez, B. ; Millour, F. ; <b> Drevon, J. </b> ; Cruzalebes, P. ; Berio, P. ; Robbe-Dubois, S. ; Rosales-Guzman, A. -- <i>"The dusty circumstellar environment of Betelgeuse during the Great Dimming as seen by VLTI/MATISSE" </i> (A&A)
+    </p>
+  </div>
+</div>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022</div>
+  <div>
+    <p>
+ Sanchez-Bermudez, J. ; Merand, A.; Sallum, S. ; <b>Drevon, J.</b> ; Kluska, J. ; Millour, F. ; Vermot, P. ; Young, J. -- <i>"Optical interferometry imaging contest IX" </i> (SPIE)
+    </p>
+  </div>
+</div>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022</div>
+  <div>
+    <p>
+ Lopez, B. ; Lagarde, S. ; Petrov, R. G.; Jaffe, W. ; Antonelli, P. ; Allouche, F. ; Berio, P. ; Matter, A. ; Meilland, A. ; Millour, F. ; Robbe-Dubois, S. ; Henning, Th. ; Weigelt, G. ; Glindemann, A. ; Agocs, T. ; Bailet, Ch. ; Beckmann, U. ; Bettonvil, F. ; van Boekel, R. ; Bourget, P. ; Bresson, Y. ; Bristow, P. ; Cruzalebes, P. ; Eldswijk, E. ; Fantei Caujolle, Y. ; Gonzalez Herrera, J. C. ; Graser, U. ; Guajardo, P. ; Heininger, M. ; Hofmann, K. -H. ; Kroes, G. ; Laun, W. ; Lehmitz, M. ; Leinert, C. ; Meisenheimer, K. ; Morel, S. ; Neumann, U. ; Paladini, C. ; Percheron, I. ; Riquelme, M. ; Schoeller, M. ; Stee, Ph. ; Venema, L. ; Woillez, J. ; Zins, G. ; Abraham, P. ; Abadie, S. ; Abuter, R. ; Accardo, M. ; Adler, T. ; Alonso, J. ; Augereau, J. -C. ; Bohm, A. ; Bazin, G. ; Beltran, J. ; Bensberg, A. ; Boland, W. ; Brast, R. ; Burtscher, L. ; Castillo, R. ; Chelli, A. ; Cid, C. ; Clausse, J. -M. ; Connot, C. ; Conzelmann, R. D. ; Danchi, W. -C. ; Delbo, M. ; <b>Drevon, J.</b> ; Dominik, C. ; van Duin, A. ; Ebert, M. ; Eisenhauer, F. ; Flament, S. ; Frahm, R. ; Gamez Rosas, V. ; Gabasch, A. ; Gallenne, A. ; Garces, E. ; Girard, P. ; Glazenborg, A. ; Gonte, F. Y. J. ; Guitton, F. ; de Haan, M. ; Hanenburg, H. ; Haubois, X. ; Hocde, V. ; Hogerheijde, M. ; ter Horst, R. ; Hron, J. ; Hummel, C. A. ; Hubin, N. ; Huerta, R. ; Idserda, J. ; Isbell, J. W. ; Ives, D. ; Jakob, G. ; Jasko, A. ; Jochum, L. ; Klarmann, L. ; Klein, R. ; Kragt, J. ; Kuindersma, S. ; Kokoulina, E. ; Labadie, L. ; Lacour, S. ; Leftley, J. ; Le Poole, R. ; Lizon, J. -L. ; Lopez, M. ; Lykou, F. ; Merand, A. ; Marcotto, A. ; Mauclert, N. ; Maurer, T. ; Mehrgan, L. H. ; Meisner, J. ; Meixner, K. ; Mellein, M. ; Menut, J. L. ; Mohr, L. ; Mosoni, L. ; Navarro, R. ; Nubbaum, E. ; Pallanca, L. ; Pantin, E. ; Pasquini, L. ; Phan Duc, T. ; Pott, J. -U.; Pozna, E. ; Richichi, A. ; Ridinger, A. ; Rigal, F. ; Rivinius, Th. ; Roelfsema, R. ; Rohloff, R. -R. ; Rousseau, S. ; Salabert, D. ; Schertl, D. ; Schuhler, N. ; Schuil, M. ; Shabun, K. ; Soulain, A. ; Stephan, C. ; Toledo, P. ; Tristram, K. ; Tromp, N. ; Vakili, F. ; Varga, J. ; Vinther, J. ; Waters, L. B. F. M. ; Wittkowski, M. ; Wolf, S. ; Wrhel, F. ; Yoffe, G. -- <i>"MATISSE, the VLTI mid-infrared imaging spectro-interferometer" </i> (A&A)
+    </p>
+  </div>
+</div>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022</div>
+  <div>
+    <p>
+Chiavassa, A. ; Kravchenko, K. ; Montarges, M. ; Millour, F. ; Matter, A. ; Freytag, B. ; Wittkowski, M. ; Hocde, V. ; Cruzalebes, P. ; Allouche, F. ; Lopez, B. ; Lagarde, S. ; Petrov, R. G. ; Meilland, A. ; Robbe-Dubois, S. ; Hofmann, K. -H. ; Weigelt, G. ; Berio, P. ; Bendjoya, P. ; Bettonvil, F. ; Domiciano de Souza, A. ; Heininger, M. ; Henning, Th. ; Isbell, J. W. ; Jaffe, W. ; Labadie, L. ; Lehmitz, M. ; Meisenheimer, K. ; Soulain, A. ; Varga, J. ; Augereau, J. -C. ; van Boekel, R. ; Burtscher, L. ; Danchi, W. C. ; Dominik, C. ; <b>Drevon, J. </b> ; Gamez Rosas, V. ; Hogerheijde, M. R. ; Hron, J. ; Klarmann, L. ; Kokoulina, E. ; Lagadec, E. ; Leftley, J. ; Mosoni, L. ; Nardetto, N. ; Paladini, C. ; Pantin, E. ; Schertl, D. ; Stee, P. ; Szabados, L. ; Waters, R. ; Wolf, S. ; Yoffe, G. -- <i>"The extended atmosphere and circumstellar environment of the cool evolved star VX Sagittarii as seen by MATISSE" </i> (A&A)
+    </p>
+  </div>
+</div>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022</div>
+  <div>
+    <p>
+Hofmann, K. -H. ; Bensberg, A.; Schertl, D. ; Weigelt, G. ; Wolf, S.; Meilland, A. ; Millour, F. ; Waters, L. B. F. M. ; Kraus, S. ; Ohnaka, K. ; Lopez, B. ; Petrov, R. G.; Lagarde, S. ; Berio, Ph. ; Allouche, F. ; Robbe-Dubois, S. ; Jaffe, W. ; Henning, Th. ; Paladini, C. ; Scholler, M. ; Merand, A. ; Glindemann, A. ; Beckmann, U. ; Heininger, M. ; Bettonvil, F. ; Zins, G. ; Woillez, J. ; Bristow, P. ; Stee, P. ; Vakili, F. ; van Boekel, R. ; Hogerheijde, M. R. ; Dominik, C. ; Augereau, J. -C. ; Matter, A. ; Hron, J. ; Pantin, E. ; Rivinius, Th. ; de Wit, W. -J. ; Varga, J. ; Klarmann, L. ; Meisenheimer, K. ; Gamez Rosas, V. ; Burtscher, L. ; Leftley, J. ; Isbell, J. W. ; Yoffe, G. ; Kokoulina, E. ; Danchi, W. C. ; Cruzalebes, P. ; Domiciano de Souza, A. ; <b>Drevon, J.</b> ; Hocde, V. ; Kreplin, A. ; Labadie, L. ; Connot, C. ; Nubbaum, E. ; Lehmitz, M. ; Antonelli, P. ; Graser, U. ; Leinert, C. -- <i>"VLTI-MATISSE L- and N-band aperture-synthesis imaging of the unclassified B[e] star FS Canis Majoris" </i> (A&A)
+    </p>
+  </div>
+</div>
 
-							</article>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2021</div>
+  <div>
+    <p>
+Weigelt, G. ; Hofmann, K. -H. ; Schertl, D. ; Lopez, B. ; Petrov, R. G. ; Lagarde, S. ; Berio, Ph. ; Jaffe, W. ; Henning, Th. ; Millour, F. ; Meilland, A. ; Allouche, F. ; Robbe-Dubois, S. ; Matter, A. ; Cruzalebes, P. ; Hillier, D. J. ; Russell, C. M. P. ; Madura, T. ; Gull, T. R. ; Corcoran, M. F. ; Damineli, A. ; Moffat, A. F. J. ; Morris, P. W. ; Richardson, N. D. ; Paladini, C. ; Scholler, M. ; Merand, A. ; Glindemann, A. ; Beckmann, U. ; Heininger, M. ; Bettonvil, F. ; Zins, G. ; Woillez, J. ; Bristow, P. ; Sanchez-Bermudez, J. ; Ohnaka, K. ; Kraus, S. ; Mehner, A. ; Wittkowski, M. ; Hummel, C. A. ; Stee, P. ; Vakili, F. ; Hartman, H. ; Navarete, F. ; Hamaguchi, K. ; Espinoza-Galeas, D. A. ; Stevens, I. R. ; van Boekel, R. ; Wolf, S. ; Hogerheijde, M. R. ; Dominik, C. ; Augereau, J. -C. ; Pantin, E. ; Waters, L. B. F. M. ; Meisenheimer, K. ; Varga, J. ; Klarmann, L. ; Gamez Rosas, V. ; Burtscher, L. ; Leftley, J. ; Isbell, J. W. ; Hocde, V. ; Yoffe, G. ; Kokoulina, E. ; Hron, J. ; Groh, J. ; Kreplin, A. ; Rivinius, Th. ; de Wit, W. -J. ; Danchi, W. -C. ; Domiciano de Souza, A. ; <b>Drevon, J.</b> ; Labadie, L. ; Connot, C. ; Nubbaum, E. ; Lehmitz, M. ; Antonelli, P. ; Graser, U. ; Leinert, C. -- <i>"VLTI-MATISSE chromatic aperture-synthesis imaging of ? Carinae's stellar wind across the Bra line. Periastron passage observations in February 2020" </i> (A&A)
+    </p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2021</div>
+  <div>
+    <p>
+Kokoulina, E. ; Matter, A. ; Lopez, B. ; Pantin, E. ; Ysard, N. ; Weigelt, G. ; Habart, E. ; Varga, J. ; Jones, A. ; Meilland, A. ; Dartois, E. ; Klarmann, L. ; Augereau, J. -C. ; van Boekel, R. ; Hogerheijde, M. ; Yoffe, G. ; Waters, L. B. F. M. ; Dominik, C. ; Jaffe, W. ; Millour, F. ; Henning, Th. ; Hofmann, K. -H. ; Schertl, D. ; Lagarde, S. ; Petrov, R. G. ; Antonelli, P. ; Allouche, F. ; Berio, P. ; Robbe-Dubois, S. ; Abraham, P. ; Beckmann, U. ; Bensberg, A. ; Bettonvil, F. ; Bristow, P. ; Cruzalebes, P. ; Danchi, W. C. ; Dannhoff, M. ; Graser, U. ; Heininger, M. ; Labadie, L. ; Lehmitz, M. ; Leinert, C. ; Meisenheimer, K. ; Paladini, C. ; Percheron, I. ; Stee, Ph. ; Woillez, J. ; Wolf, S. ; Zins, G. ; Delbo, M. ; <b> Drevon, J. </b> ; Duprat, J. ; Gamez Rosas, V. ; Hocde, V. ; Hron, J. ; Hummel, C. A. ; Isbell, J. W. ; Leftley, J. ; Soulain, A. ; Vakili, F. ; Wittkowski, M. -- <i>"First MATISSE L-band observations of HD 179218. Is the inner 10 au region rich in carbon dust particles?" </i> (A&A)
+    </p>
+  </div>
+</div>
+
+
+						</article>
+
+						<!-- Talks -->
+						<article id="talks">
+							<h2 class="major">Talks</h2>
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2024 (jul.)</div>
+  <div> 
+    <p>
+    The close circumstellar environment of Betelgeuse during the Great Dimming Event as seen by VLTI/MATISSE, European Astronomical Society Conference (EAS)
+    </p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2024 (jun.)</div>
+  <div> 
+    <p>
+ Study of the dust formation process around evolved stars with the VLTI/MATISSE instrument, Astrophysic Laboratory of Bordeaux seminar.  </p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2023 (apr.)</div>
+  <div> 
+    <p>
+    Interferometry with MATISSE: Observation of evolved stars, Laboratory Lagrange day
+    </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2023 (jan.)</div>
+  <div> <p> Evolved stars with MATISSE, a new approach using RHAPSODY, Monthly conferences at the Vienne Observatory</p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2023 (jan.)</div>
+  <div> <p> Evolved stars with MATISSE, a new approach using RHAPSODY, VLTI and ALMA symthesis, Imaging Workshop </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2023 (jan.)</div>
+  <div> <p> Where are dust and molecules around R Sculptoris?, CAMK Torun seminar  </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022 (nov.)</div>
+  <div> <p> Where are dust and molecules around R Sculptoris?, CAMK Torun seminar  </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022 (jul.)</div>
+  <div> <p> RHAPSODY: Reconstructing Hankel RrAdial Profiles in centro-Symmetric Objects with Discrete rings for astrophYsics, SPIE Astronomical Telescopes and Instrumentation Meeting   </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022 (jul.)</div>
+  <div> <p> Multichromatic radial profil reconstruction with RHAPSODY. Application to evolved stars observed with VLTI/MATISSE, EAS Conference </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2022 (apr.)</div>
+  <div> <p> MATISSE first pictures of dust and molecules around R Scl, High Angular Resolution Astronomy Workshop </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2021 (nov.)</div>
+  <div> <p> MATISSE/VLTI: Highlight on dust and molecules around R Scl, The Origin of Outflows in Evolved Stars, IAU Symposium 36: Virtual Meeting </p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2021 (apr.)</div>
+  <div> <p> MATISSE/VLTI : Highlight on dust and molecules around R Scl, Lagrange laboratory day </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2020 (oct.)</div>
+  <div> <p> R Scl observed with VLTI/MATISSE, Dust & Metals 2020 Conference  </p>
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2020 (oct.)</div>
+  <div> <p> MATISSE/VLTI: Highlight on dust and molecules around R Scl, Ground-based thermal infrared astronomy, past, present, and future </p>
+  </div>
+</div>
+
+
+
+						</article>
+
+						<!-- Education -->
+						<article id="education">
+							<h2 class="major">Education</h2>
+							<p>Contenu de la section Education.</p>
+						</article>
+
+						<!-- Outreach -->
+						<article id="outreach">
+							<h2 class="major">Outreach</h2>
+							<p>Contenu de la section Outreach.</p>
+						</article>
+
+						<!-- Press and Media -->
+						<article id="press-media">
+							<h2 class="major">Press</h2>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+  <div style="font-weight: bold; margin-right: 20px; white-space: nowrap;">2023 (oct.)</div>
+  <div> 							<p>   
+              <a href="https://www.eso.org/public/images/potw2343a/" target="_blank" style="text-decoration: none; color: #FFFFFF;">
+    <i>"Betelgeuse's Great Dimming Event in high resolution"</i>
+  </a>, ESO picture of the day</p>
+
+  </div>
+</div>
+
+						</article>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Julien Drevon. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
